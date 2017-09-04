@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<table>
+
+	<tr>
+		<td>
+           <p>
+               Cell Count <br/> 
+               <input id="cellCount" type="number" min="1" max="200" />
+           </p>
+           <p>
+               Generations per Second <br/> 
+               <input id="genPerSec" type="number" min="1" max="60" />
+           </p>
+			<button id="playPause" onClick="playPause()">Play</button> <button type="submit" onClick="updateValues()">Reset</button>
+		</td>
+		<td rowspan="2">
+           <div id="sketchHolder">
+           </div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		   Keyboard Shortcuts:<br/>
+           C - Clear the grid<br/>
+           P - Play/Pause<br/>
+           R - Reset with new values<br/>
+           Spacebar - Step Grid<br/>           
+		<td/>
+	</tr>
+</table>
+   
+   
+<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+<script language="javascript" type="text/javascript" src="sketch.js"></script>
+<script language="javascript" type="text/javascript" src="Cell.js"></script>
+<script src="sketch.js"></script>
+</html>
